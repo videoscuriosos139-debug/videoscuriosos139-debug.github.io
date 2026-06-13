@@ -1,7 +1,48 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Videos Curiosos</title></head>
-<body style="font-family:sans-serif;max-width:700px;margin:40px auto;padding:0 16px;line-height:1.6">
-<h1>🌙 Videos Curiosos</h1>
-<p>Herramienta personal para publicar contenido propio.</p>
-<ul><li><a href="privacy.html">Política de Privacidad</a></li>
-<li><a href="terms.html">Términos de Servicio</a></li></ul>
-</body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Videos Curiosos — Mis redes</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    background:radial-gradient(circle at 50% 0%,#1b2a4a 0%,#0a0f1f 70%);
+    color:#fff; min-height:100vh; display:flex; align-items:center; justify-content:center;
+    padding:32px 18px;
+  }
+  .card{ width:100%; max-width:420px; text-align:center; }
+  .logo{ font-size:42px; margin-bottom:6px; }
+  h1{ font-size:24px; font-weight:800; letter-spacing:.5px; }
+  .handle{ color:#8fa3c8; font-size:15px; margin:4px 0 26px; }
+  a.btn{
+    display:flex; align-items:center; gap:14px; width:100%;
+    padding:16px 20px; margin:12px 0; border-radius:16px;
+    text-decoration:none; color:#fff; font-weight:700; font-size:17px;
+    background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12);
+    transition:transform .12s ease, background .2s ease;
+  }
+  a.btn:active{ transform:scale(.97); }
+  a.yt:hover{ background:#ff0000; } a.tt:hover{ background:#000; border-color:#25f4ee; }
+  a.ig:hover{ background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); }
+  a.fb:hover{ background:#1877f2; }
+  .ico{ font-size:22px; width:26px; text-align:center; }
+  footer{ margin-top:26px; color:#5a6b8c; font-size:12px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">🔭</div>
+    <h1>Videos Curiosos</h1>
+    <div class="handle">Datos curiosos que te volarán la cabeza 🤯</div>
+
+    <a class="btn yt" href="https://youtube.com/@videoscuriosos139"><span class="ico">▶️</span> YouTube</a>
+    <a class="btn tt" href="https://tiktok.com/@videoscuriosos139"><span class="ico">🎵</span> TikTok</a>
+    <a class="btn ig" href="https://instagram.com/videoscuriosos139"><span class="ico">📸</span> Instagram</a>
+    <a class="btn fb" href="https://www.facebook.com/profile.php?id=61590647825852"><span class="ico">👍</span> Facebook</a>
+
+    <footer>@videoscuriosos139</footer>
+  </div>
+</body>
+</html>
