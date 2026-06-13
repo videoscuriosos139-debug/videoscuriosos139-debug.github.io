@@ -1,0 +1,17 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Autorización TikTok</title>
+<style>body{font-family:-apple-system,system-ui,sans-serif;background:#111;color:#eee;
+display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0;text-align:center}
+.card{max-width:560px;padding:32px}code{background:#222;padding:10px 14px;border-radius:8px;
+display:inline-block;margin-top:10px;word-break:break-all;font-size:15px;color:#4ade80}
+button{margin-top:18px;padding:10px 18px;border:0;border-radius:8px;background:#4ade80;font-weight:600;cursor:pointer}</style>
+</head><body><div class="card">
+<h2>🌙 Autorización recibida</h2>
+<p>Copia este código completo y pégaselo a Nox:</p>
+<code id="c">(sin código en la URL)</code><br>
+<button onclick="navigator.clipboard.writeText(document.getElementById('c').innerText)">Copiar</button>
+<script>const p=new URLSearchParams(location.search);
+const code=p.get('code');const err=p.get('error');
+document.getElementById('c').innerText = code? code : (err? ('error: '+err) : '(sin código en la URL)');
+</script></div></body></html>
